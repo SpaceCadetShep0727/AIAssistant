@@ -8,7 +8,7 @@ said_file_path = os.path.dirname(__file__) + '//said.wav'
 response_file_path = os.path.dirname(__file__) + '//response.mp3'
 
 
-my_key = 'sk-proj-TxRuRh6g2JRKCmeQmepaT3BlbkFJvjsnnNg6ziI4pDv86hU7'
+my_key = ''
 
 client = OpenAI(api_key=my_key)
 r = sr.Recognizer()
