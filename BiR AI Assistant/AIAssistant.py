@@ -14,6 +14,7 @@ client = OpenAI(api_key=my_key)
 r = sr.Recognizer()
 AI_name = 'Ashton'
 ready_for_command = True
+print('Ready')
 picture_wake_words = ['picture', 'image','photo']
 voice_type = 'fable'
 
