@@ -1,18 +1,21 @@
+#Libary imports
 from openai import OpenAI
 import os.path
 from playsound import playsound
 import speech_recognition as sr
 import pyaudio
 
+# Path to mp3 files for what we say and what the AI says
 said_file_path = os.path.dirname(__file__) + '//said.wav'
 response_file_path = os.path.dirname(__file__) + '//response.mp3'
 
-
+# API Key
 my_key = ''
 
+# Connecting to OpenAI and initializing speech recognizer
 client = OpenAI(api_key=my_key)
 r = sr.Recognizer()
-AI_name = 'Ashton'
+AI_name = 'Jarvis'
 ready_for_command = True
 print('Ready')
 picture_wake_words = ['picture', 'image','photo']
@@ -100,6 +103,7 @@ def make_AI_say(phrase):
     print(response_message)
     os.remove(response_file_path)  # deleting file
 
+# Main function
 while True:
     if ready_for_command:
         said = get_audio()
