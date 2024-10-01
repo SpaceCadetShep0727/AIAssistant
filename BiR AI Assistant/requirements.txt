@@ -1,3 +1,4 @@
 PyAudio==0.2.14
 openai==1.42.0
 playsound==1.2.2
+SpeechRecognition==3.10.4
